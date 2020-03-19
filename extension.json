@@ -1,0 +1,77 @@
+{
+	"name": "UserProtect",
+	"version": "1.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Pastakhov Pavel Astakhov]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:UserProtect",
+	"descriptionmsg": "ext-userprotect-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"GroupPermissions": {
+		"sysop": {
+			"userprotect": true
+		}
+	},
+	"AvailableRights": [
+		"userprotect"
+	],
+	"MessagesDirs": {
+		"UserProtect": [
+			"i18n"
+		]
+	},
+	"Actions": {
+		"userprotect": "UserProtectAction"
+	},
+	"Hooks": {
+		"ArticleDeleteComplete": "UserProtectHooks::onArticleDeleteComplete",
+		"PageContentInsertComplete": "UserProtectHooks::onPageContentInsertComplete",
+		"SkinTemplateNavigation": "UserProtectHooks::onSkinTemplateNavigation",
+		"MediaWikiServices": "UserProtectHooks::onMediaWikiServices",
+		"LoadExtensionSchemaUpdates": "UserProtectHooks::onLoadExtensionSchemaUpdates"
+	},
+	"AutoloadClasses": {
+		"UserProtectAction": "includes/UserProtectAction.php",
+		"UserProtectForm": "includes/UserProtectForm.php",
+		"UserProtectHooks": "includes/UserProtectHooks.php",
+		"UserProtectPermissionManager": "includes/UserProtectPermissionManager.php"
+	},
+	"ResourceModules": {
+		"ext.UserProtect.form": {
+			"scripts": "form.js",
+			"styles": "form.less",
+			"dependencies": [
+				"mediawiki.widgets.UserInputWidget",
+				"mediawiki.widgets.UsersMultiselectWidget"
+			],
+			"messages": [
+				"confirm",
+				"ext-userprotect-label-users",
+				"ext-userprotect-add-rights-legend",
+				"ext-userprotect-remove-rights-legend"
+			]
+		},
+		"ext.UserProtect.navigation": {
+			"styles": "navigation.less"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "UserProtect/modules"
+	},
+	"config": {
+		"UserProtectRestrictionTypes": {
+			"value": {
+				"edit": true,
+				"move":  true,
+				"delete": true
+			},
+			"description": "The list of permissions used for per-user per-page access control"
+		}
+	},
+	"manifest_version": 2
+}

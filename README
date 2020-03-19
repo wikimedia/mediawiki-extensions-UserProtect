@@ -1,0 +1,30 @@
+This extension provides per-page per-user access control.
+
+== Requirements ==
+
+This version of the extension has been tested with MediaWiki 1.35.
+
+== Installation ==
+
+Add this line to your LocalSettings.php:
+
+    wfLoadExtension( 'UserProtect' );
+
+Run the update script which will automatically create the necessary database tables that this extension needs.
+
+== Usage ==
+
+If you are a member of a group with the 'userprotect' right (sysop has this by default) you can see the 'User protect' tab on content pages.
+On the User protect tab there is a form that allows you to add or remove permissions for a list of users.
+The list of permissions is configurable by $wgUserProtectRestrictionTypes variable.
+"All rights" adds or removes all permissions from the list of permissions, even if the list of permissions is changed later.
+
+== Parameters ==
+
+default value:
+
+$wgUserProtectRestrictionTypes = [
+	'edit' => true,
+	'move' => true,
+	'delete' => true,
+];

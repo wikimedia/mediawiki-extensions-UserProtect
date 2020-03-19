@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"action-userprotect": "{{doc-action|userprotect}}",
+	"right-userprotect": "{{doc-right|userprotect}}\nThe right to manage per-page per-user access control",
+	"ext-userprotect-desc": "{{desc|name=User Protect|url=https://www.mediawiki.org/wiki/Extension:UserProtect}}",
+	"ext-userprotect-tab-text": "The text of the tab going to the manage per-page per-user access control",
+	"ext-userprotect-label-all-rights": "Label of field that adds or removes all rights listed in the list of permissions",
+	"ext-userprotect-label-users": "Placeholder text of user input multiselect widget on user protect from",
+	"ext-userprotect-add-rights-legend": "Label text of add rights group on user protect from",
+	"ext-userprotect-remove-rights-legend": "Label text of remove rights group on user protect from"
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"action-userprotect": "manage per-page per-user access control",
+	"right-userprotect": "User protect",
+	"ext-userprotect-desc": "This extension provides per-page per-user access control",
+	"ext-userprotect-tab-text": "User protect",
+	"ext-userprotect-label-all-rights": "All rights",
+	"ext-userprotect-label-users": "Users",
+	"ext-userprotect-add-rights-legend": "Add rights",
+	"ext-userprotect-remove-rights-legend": "Remove rights"
+}
