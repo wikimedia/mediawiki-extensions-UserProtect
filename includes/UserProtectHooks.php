@@ -56,8 +56,7 @@ class UserProtectHooks {
 					),
 					$services->getSpecialPageFactory(),
 					$services->getRevisionLookup(),
-					$services->getNamespaceInfo(),
-					$services->getBlockErrorFormatter()
+					$services->getNamespaceInfo()
 				);
 			}
 		);
