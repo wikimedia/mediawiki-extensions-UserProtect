@@ -36,7 +36,7 @@ class UserProtectHooks {
 
 		$links['actions']['userprotect'] = [
 			'class' => $class,
-			'text' => $skinTemplate->msg( 'ext-userprotect-tab-text' )->text(),
+			'text' => $skinTemplate->msg( 'userprotect-tab-text' )->text(),
 			'href' => $title->getLocalUrl( [ 'action' => 'userprotect' ] )
 		];
 		$skinTemplate->getOutput()->addModules( 'ext.UserProtect.navigation' );

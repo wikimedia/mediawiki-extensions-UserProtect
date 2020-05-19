@@ -5,7 +5,7 @@
 		"[https://www.mediawiki.org/wiki/User:Pastakhov Pavel Astakhov]"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:UserProtect",
-	"descriptionmsg": "ext-userprotect-desc",
+	"descriptionmsg": "userprotect-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
@@ -50,9 +50,9 @@
 			],
 			"messages": [
 				"confirm",
-				"ext-userprotect-label-users",
-				"ext-userprotect-add-rights-legend",
-				"ext-userprotect-remove-rights-legend"
+				"userprotect-label-users",
+				"userprotect-add-rights-legend",
+				"userprotect-remove-rights-legend"
 			]
 		},
 		"ext.UserProtect.navigation": {

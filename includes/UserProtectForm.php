@@ -295,7 +295,7 @@ class UserProtectForm {
 		array_unshift( $applicableTypes, 'all' );
 		foreach ( $applicableTypes as $type ) {
 			if ( $type === 'all' ) {
-				$msg = $context->msg( 'ext-userprotect-label-all-rights' );
+				$msg = $context->msg( 'userprotect-label-all-rights' );
 			} else {
 				$msg = $context->msg( "right-$type" );
 			}

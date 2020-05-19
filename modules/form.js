@@ -8,8 +8,8 @@
 		applicableTypes = config.applicableTypes || [],
 		applicableLegends = config.applicableLegends || {},
 		rights = config.rights || {},
-		fieldsetAdd = new OO.ui.FieldsetLayout( { label: mw.msg( 'ext-userprotect-add-rights-legend' ) } ),
-		fieldsetRemove = new OO.ui.FieldsetLayout( { label: mw.msg( 'ext-userprotect-remove-rights-legend' ) } ),
+		fieldsetAdd = new OO.ui.FieldsetLayout( { label: mw.msg( 'userprotect-add-rights-legend' ) } ),
+		fieldsetRemove = new OO.ui.FieldsetLayout( { label: mw.msg( 'userprotect-remove-rights-legend' ) } ),
 		form = new OO.ui.FormLayout( {
 			action: mw.Title.newFromText( mw.config.get( 'wgTitle' ), mw.config.get( 'wgNamespaceNumber' ) ).getUrl( { action: 'userprotect' } ),
 			method: 'post'
@@ -25,12 +25,12 @@
 		type = applicableTypes[ i ];
 		usersMultiselectAdd = new mw.widgets.UsersMultiselectWidget( {
 			name: 'add-users-' + type,
-			placeholder: mw.msg( 'ext-userprotect-label-users' ),
+			placeholder: mw.msg( 'userprotect-label-users' ),
 			input: { autocomplete: false }
 		} );
 		usersMultiselectRemove = new mw.widgets.UsersMultiselectWidget( {
 			name: 'remove-users-' + type,
-			placeholder: mw.msg( 'ext-userprotect-label-users' ),
+			placeholder: mw.msg( 'userprotect-label-users' ),
 			input: { autocomplete: false }
 		} );
 		fieldAdd = new OO.ui.FieldLayout( usersMultiselectAdd, {
