@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"action-userprotect": "раководење со контралата на пристап по страница, по корисник",
+	"right-userprotect": "Корисничка заштита",
+	"userprotect-desc": "Овој додаток возможува контрала на пристап по страница, по корисник",
+	"userprotect-tab-text": "Корисничка заштита",
+	"userprotect-label-all-rights": "Сите права",
+	"userprotect-label-users": "Корисници",
+	"userprotect-add-rights-legend": "Додај права",
+	"userprotect-remove-rights-legend": "Одземи права"
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"userprotect-label-all-rights": "Alle rechten",
+	"userprotect-label-users": "Gebruikers",
+	"userprotect-add-rights-legend": "Rechten toevoegen",
+	"userprotect-remove-rights-legend": "Rechten verwijderen"
+}

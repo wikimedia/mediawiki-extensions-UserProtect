@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail"
+		]
+	},
+	"action-userprotect": "zarządzania kontrolą dostępu dla poszczególnych użytkowników na stronach",
+	"userprotect-desc": "To rozszerzenie dodaje kontrolę dostępu dla poszczególnych użytkowników na stronach",
+	"userprotect-label-all-rights": "Wszystkie uprawnienia",
+	"userprotect-label-users": "Użytkownicy",
+	"userprotect-add-rights-legend": "Dodaj uprawnienia",
+	"userprotect-remove-rights-legend": "Usuń uprawnienia"
+}

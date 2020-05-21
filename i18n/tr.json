@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"action-userprotect": "kullanıcı başına sayfa başına erişim denetimini yönet",
+	"right-userprotect": "Kullanıcı koruması",
+	"userprotect-desc": "Bu uzantı, kullanıcı başına sayfa başına erişim kontrolü sağlar",
+	"userprotect-tab-text": "Kullanıcı koruması",
+	"userprotect-label-all-rights": "Tüm haklar",
+	"userprotect-label-users": "Kullanıcılar",
+	"userprotect-add-rights-legend": "Haklar ekle",
+	"userprotect-remove-rights-legend": "Hakları kaldır"
+}

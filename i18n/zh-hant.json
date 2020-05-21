@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xiplus"
+		]
+	},
+	"action-userprotect": "管理基於頁面及使用者的存取控制",
+	"right-userprotect": "使用者保護",
+	"userprotect-desc": "此擴充功能提供基於頁面及使用者的存取控制",
+	"userprotect-tab-text": "使用者保護",
+	"userprotect-label-all-rights": "所有權限",
+	"userprotect-label-users": "使用者",
+	"userprotect-add-rights-legend": "新增權限",
+	"userprotect-remove-rights-legend": "移除權限"
+}

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wladek92"
+		]
+	},
+	"action-userprotect": "gérer le contrôle d'accès par page et par utilisateur",
+	"right-userprotect": "Protection utilisateur",
+	"userprotect-desc": "Cette extension fournit le contrôle d'accès par page et par utilisateur",
+	"userprotect-tab-text": "Protection utilisateur",
+	"userprotect-label-all-rights": "Tous les droits",
+	"userprotect-label-users": "Utilisateurs",
+	"userprotect-add-rights-legend": "Tous les droits",
+	"userprotect-remove-rights-legend": "Supprimer les droits"
+}

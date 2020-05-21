@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Killarnee"
+		]
+	},
+	"right-userprotect": "Benutzerschutz",
+	"userprotect-tab-text": "Benutzerschutz",
+	"userprotect-label-all-rights": "Alle Rechte",
+	"userprotect-label-users": "Benutzer",
+	"userprotect-add-rights-legend": "Rechte hinzufügen",
+	"userprotect-remove-rights-legend": "Rechte entfernen"
+}
