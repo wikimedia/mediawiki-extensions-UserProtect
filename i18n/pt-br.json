@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira"
+		]
+	},
+	"action-userprotect": "gerenciar controle de acesso por página por usuário",
+	"right-userprotect": "Proteger pelo usuário",
+	"userprotect-desc": "Esta extensão fornece controle de acesso por página por usuário",
+	"userprotect-tab-text": "Proteger pelo usuário",
+	"userprotect-label-all-rights": "Todos os direitos",
+	"userprotect-label-users": "Usuários",
+	"userprotect-add-rights-legend": "Adicionar direitos",
+	"userprotect-remove-rights-legend": "Remover direitos"
+}
