@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Codenstory",
+			"Ykhwong"
+		]
+	},
+	"action-userprotect": "문서별 사용자별 접근 제어를 관리할",
+	"right-userprotect": "사용자 보호",
+	"userprotect-desc": "이 확장 기능은 문서별 사용자별 접근 제어를 제공합니다",
+	"userprotect-tab-text": "사용자 보호",
+	"userprotect-label-all-rights": "모든 권한",
+	"userprotect-label-users": "사용자",
+	"userprotect-add-rights-legend": "권한 추가",
+	"userprotect-remove-rights-legend": "권한 제거"
+}
