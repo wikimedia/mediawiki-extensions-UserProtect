@@ -4,7 +4,12 @@
 			"Robby"
 		]
 	},
+	"action-userprotect": "geréiere vun der Zougangskontroll pro Benotzer a pro Säit",
+	"right-userprotect": "Benotzerschutz",
+	"userprotect-desc": "Dës Erweiderung erlaabt eng Zougangskontroll pro Benotzer a pro Säit",
+	"userprotect-tab-text": "Benotzerschutz",
 	"userprotect-label-all-rights": "All Rechter",
 	"userprotect-label-users": "Benotzer",
-	"userprotect-add-rights-legend": "Rechter derbäisetzen"
+	"userprotect-add-rights-legend": "Rechter derbäisetzen",
+	"userprotect-remove-rights-legend": "Rechter ewechhuelen"
 }

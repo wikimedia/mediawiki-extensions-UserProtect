@@ -4,5 +4,10 @@
 			"Diman Russkov"
 		]
 	},
-	"userprotect-label-users": "Участники"
+	"action-userprotect": "управлять контролем доступа к странице для каждого пользователя",
+	"userprotect-desc": "Это расширение обеспечивает контроль доступа к странице для каждого пользователя",
+	"userprotect-label-all-rights": "Все права",
+	"userprotect-label-users": "Участники",
+	"userprotect-add-rights-legend": "Добавить права",
+	"userprotect-remove-rights-legend": "Удалить права"
 }
