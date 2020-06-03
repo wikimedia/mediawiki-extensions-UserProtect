@@ -1,10 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"SomeyaMako",
 			"列维劳德"
 		]
 	},
+	"action-userprotect": "管理逐页面、逐用户的权限控制",
 	"right-userprotect": "用户保护",
+	"userprotect-desc": "该扩展提供了逐页面、逐用户的权限控制",
 	"userprotect-tab-text": "用户保护",
-	"userprotect-label-users": "用户"
+	"userprotect-label-all-rights": "所有权利",
+	"userprotect-label-users": "用户",
+	"userprotect-add-rights-legend": "添加权利",
+	"userprotect-remove-rights-legend": "移除权利"
 }
