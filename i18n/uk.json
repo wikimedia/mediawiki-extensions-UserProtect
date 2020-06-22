@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ата"
+		]
+	},
+	"action-userprotect": "керування контролем доступу окремих користувачів до окремих сторінок",
+	"userprotect-desc": "Це розширення забезпечує керування контролем доступу окремих користувачів до окремих сторінок",
+	"userprotect-label-all-rights": "Усі права",
+	"userprotect-label-users": "Користувачі",
+	"userprotect-add-rights-legend": "Додати права",
+	"userprotect-remove-rights-legend": "Вилучити права"
+}
