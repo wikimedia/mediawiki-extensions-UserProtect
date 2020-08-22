@@ -91,20 +91,12 @@ class UserProtectHooks {
 
 	/**
 	 * Occurs after a new article is created
-	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/PageContentInsertComplete
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/PageSaveComplete
 	 * @param WikiPage $wikiPage
 	 * @param User $user
-	 * @param Content $content
-	 * @param string $summary
-	 * @param int $isMinor
-	 * @param null $isWatch
-	 * @param null $section
-	 * @param int $flags
-	 * @param Revision $revision
 	 */
 	public static function onPageContentInsertComplete(
-		WikiPage $wikiPage, User $user, Content $content, string $summary,
-		int $isMinor, $isWatch, $section, int $flags, Revision $revision
+		WikiPage $wikiPage, User $user
 	) {
 		$title = $wikiPage->getTitle();
 		$dbw = wfGetDB( DB_MASTER );
