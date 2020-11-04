@@ -58,7 +58,9 @@ class UserProtectHooks {
 					$services->getRevisionLookup(),
 					$services->getNamespaceInfo(),
 					$services->getBlockErrorFormatter(),
-					$services->getHookContainer()
+					$services->getHookContainer(),
+					// Check for 1.36 for the UserCache as new argument
+					is_callable( [ $services, 'getUserCache' ] ) ? $services->getUserCache() : null
 				);
 			}
 		);
