@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"action-userprotect": "gestisce 'u condrolle de trasute pàgene pe pàgene",
+	"right-userprotect": "Protegge l'utende",
+	"userprotect-desc": "Sta estenzione dèje 'nu condrolle d'a trasute pàgene pe pàgene",
+	"userprotect-tab-text": "Protegge l'utende",
+	"userprotect-label-all-rights": "Tutte le deritte",
+	"userprotect-label-users": "Utinde",
+	"userprotect-add-rights-legend": "Aggiunge le deritte",
+	"userprotect-remove-rights-legend": "Live le deritte"
+}
