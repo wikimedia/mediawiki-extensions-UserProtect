@@ -67,7 +67,7 @@
 		"UserProtectRestrictionTypes": {
 			"value": {
 				"edit": true,
-				"move":  true,
+				"move": true,
 				"delete": true
 			},
 			"description": "The list of permissions used for per-user per-page access control"
