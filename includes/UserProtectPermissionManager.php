@@ -6,30 +6,36 @@ use MediaWiki\User\UserIdentity;
 
 class UserProtectPermissionManager extends PermissionManager {
 	/**
-	 * list of possible permissions for non-existent pages
+	 * List of possible permissions for non-existent pages
+	 *
+	 * @var bool[]
 	 */
 	private const CREATE_RIGHTS = [
 		'createpage' => true,
 		'createtalk' => true,
 	];
+
+	/** @var int */
 	private const CACHE_TITLES = 0;
+
+	/** @var int */
 	private const CACHE_RIGHTS = 1;
 
-	/**
-	 * @var array
-	 */
+	/** @var array */
 	private static $cache = [];
-	/**
-	 * @var LinkTarget
-	 */
+
+	/** @var LinkTarget */
 	private $userProtectPage;
-	/**
-	 * @var array
-	 */
+
+	/** @var array */
 	private $removedRights;
 
 	/**
-	 * @inheritDoc
+	 * @param string $action
+	 * @param User $user
+	 * @param LinkTarget $page
+	 * @param string $rigor
+	 * @return bool
 	 */
 	public function userCan( $action, User $user, LinkTarget $page, $rigor = self::RIGOR_SECURE ) {
 		$this->userProtectPage = $page;
@@ -41,7 +47,12 @@ class UserProtectPermissionManager extends PermissionManager {
 	}
 
 	/**
-	 * @inheritDoc
+	 * @param string $action
+	 * @param User $user
+	 * @param LinkTarget $page
+	 * @param string $rigor
+	 * @param array $ignoreErrors
+	 * @return array[]
 	 */
 	public function getPermissionErrors(
 		$action, User $user, LinkTarget $page, $rigor = self::RIGOR_SECURE, $ignoreErrors = []
@@ -64,7 +75,8 @@ class UserProtectPermissionManager extends PermissionManager {
 	}
 
 	/**
-	 * @inheritDoc
+	 * @param UserIdentity $user
+	 * @return array|string[]
 	 */
 	public function getUserPermissions( UserIdentity $user ) {
 		$permissions = parent::getUserPermissions( $user );
@@ -92,6 +104,7 @@ class UserProtectPermissionManager extends PermissionManager {
 	/**
 	 * Returns list of removed and added permissions for the title and user
 	 * as an array [ 0 => removed, 1 => added ]
+	 *
 	 * @param Title $title
 	 * @param int $userId
 	 * @return array
@@ -158,6 +171,7 @@ class UserProtectPermissionManager extends PermissionManager {
 
 	/**
 	 * Returns applicable permission types
+	 *
 	 * @param bool $pageExists
 	 * @return array
 	 */

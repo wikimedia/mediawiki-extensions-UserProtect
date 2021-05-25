@@ -6,7 +6,10 @@ use OOUI\ProgressBarWidget;
 
 class UserProtectForm {
 
+	/** @var int */
 	private const TYPE_REMOVED = 0;
+
+	/** @var int */
 	private const TYPE_ADDED = 1;
 
 	/** @var array Permissions errors for the protect action */
@@ -35,6 +38,7 @@ class UserProtectForm {
 
 	/**
 	 * UserProtectForm constructor.
+	 *
 	 * @param Action $action
 	 */
 	public function __construct( Action $action ) {
@@ -68,6 +72,7 @@ class UserProtectForm {
 
 	/**
 	 * Main entry point for action=userprotect
+	 *
 	 * @throws ErrorPageError
 	 * @throws MWException
 	 */
@@ -130,6 +135,7 @@ class UserProtectForm {
 
 	/**
 	 * Save submitted form
+	 *
 	 * @return bool
 	 * @throws MWException
 	 */
@@ -204,6 +210,7 @@ class UserProtectForm {
 
 	/**
 	 * Builds row for insertion to the database and adds it to the $rows variable
+	 *
 	 * @param array $users
 	 * @param array $userNames
 	 * @param string $type
@@ -247,6 +254,7 @@ class UserProtectForm {
 
 	/**
 	 * Show the input form with optional error message
+	 *
 	 * @param string|array|null $err
 	 * @throws MWException
 	 */
@@ -323,6 +331,7 @@ class UserProtectForm {
 	/**
 	 * Returns existing user names with user id
 	 * as an array [ 'user name' => id ]
+	 *
 	 * @param array $userNames
 	 * @return array
 	 */
@@ -348,6 +357,7 @@ class UserProtectForm {
 
 	/**
 	 * Returns submitted user names from UsersMultiselectWidget
+	 *
 	 * @param WebRequest $request
 	 * @param string $name
 	 * @return array

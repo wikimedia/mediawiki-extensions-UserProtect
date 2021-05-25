@@ -44,12 +44,14 @@ class UserProtectHooks {
 
 	/**
 	 * Register UserProtect services
+	 *
 	 * @param MediaWikiServices $container
 	 */
 	public static function onMediaWikiServices( MediaWikiServices $container ) {
 		$container->redefineService(
 			'PermissionManager',
 			static function ( MediaWikiServices $services ): PermissionManager {
+				// @phan-suppress-next-line PhanParamTooFew
 				return new UserProtectPermissionManager(
 					new ServiceOptions(
 						PermissionManager::CONSTRUCTOR_OPTIONS, $services->getMainConfig()
@@ -114,7 +116,8 @@ class UserProtectHooks {
 
 	/**
 	 * This is attached to the MediaWiki 'LoadExtensionSchemaUpdates' hook.
-	 * Fired when MediaWiki is updated to allow extensions to update the database
+	 * Fired when MediaWiki is updated to allow extensions to update the database.
+	 *
 	 * @param DatabaseUpdater $updater
 	 */
 	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
