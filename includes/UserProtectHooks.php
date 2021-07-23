@@ -49,7 +49,7 @@ class UserProtectHooks {
 	public static function onMediaWikiServices( MediaWikiServices $container ) {
 		$container->redefineService(
 			'PermissionManager',
-			static function ( MediaWikiServices $services ) : PermissionManager {
+			static function ( MediaWikiServices $services ): PermissionManager {
 				return new UserProtectPermissionManager(
 					new ServiceOptions(
 						PermissionManager::CONSTRUCTOR_OPTIONS, $services->getMainConfig()
