@@ -83,7 +83,7 @@ class UserProtectHooks {
 		WikiPage $wikiPage, User $user, string $reason, int $id, Content $content,
 		LogEntry $logEntry, int $archivedRevisionCount
 	) {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->delete(
 			'user_protect_rights',
 			[
@@ -103,7 +103,7 @@ class UserProtectHooks {
 		WikiPage $wikiPage, User $user
 	) {
 		$title = $wikiPage->getTitle();
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->delete(
 			'user_protect_titles',
 			[
