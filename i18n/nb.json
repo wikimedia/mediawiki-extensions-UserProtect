@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"action-userprotect": "behandle tilgangskontroll per side og per bruker",
+	"right-userprotect": "Brukerbeskyttelse",
+	"userprotect-desc": "Denne utvidelsen gjør det mulig å behandle tilgang per bruker per side",
+	"userprotect-tab-text": "Brukerbeskytting",
+	"userprotect-label-all-rights": "Alle rettigheter",
+	"userprotect-label-users": "Brukere",
+	"userprotect-add-rights-legend": "Legg til rettigheter",
+	"userprotect-remove-rights-legend": "Fjern rettigheter"
+}
