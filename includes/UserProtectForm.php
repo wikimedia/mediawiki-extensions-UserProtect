@@ -49,7 +49,8 @@ class UserProtectForm {
 
 		// Check if the form should be disabled.
 		// If it is, the form will be available in read-only to show levels.
-		$this->permManager = MediaWikiServices::getInstance()->getPermissionManager();
+		$services = MediaWikiServices::getInstance();
+		$this->permManager = $services->getPermissionManager();
 		$rigor = $this->context->getRequest()->wasPosted()
 			? PermissionManager::RIGOR_SECURE
 			: PermissionManager::RIGOR_FULL;
@@ -59,8 +60,9 @@ class UserProtectForm {
 			$this->title,
 			$rigor
 		);
-		if ( wfReadOnly() ) {
-			$this->permErrors[] = [ 'readonlytext', wfReadOnlyReason() ];
+		$readOnlyMode = $services->getReadOnlyMode();
+		if ( $readOnlyMode->isReadOnly() ) {
+			$this->permErrors[] = [ 'readonlytext', $readOnlyMode->getReason() ];
 		}
 		$this->disabled = $this->permErrors !== [];
 		$this->disabledAttrib = $this->disabled
