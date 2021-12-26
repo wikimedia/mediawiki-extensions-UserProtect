@@ -202,6 +202,7 @@ class UserProtectForm {
 			$this->addRowsForType( $users, $removeValue, $type, self::TYPE_REMOVED, $timestamp, $rows );
 			$this->addRowsForType( $users, $add[$type], $type, self::TYPE_ADDED, $timestamp, $rows );
 		}
+		// @phan-suppress-next-line SecurityCheck-SQLInjection
 		$dbw->insert( $tableName, $rows, __METHOD__ );
 
 		$dbw->endAtomic( __METHOD__ );

@@ -51,18 +51,18 @@ class UserProtectHooks {
 		$container->redefineService(
 			'PermissionManager',
 			static function ( MediaWikiServices $services ): PermissionManager {
-				// @phan-suppress-next-line PhanParamTooFew
 				return new UserProtectPermissionManager(
 					new ServiceOptions(
 						PermissionManager::CONSTRUCTOR_OPTIONS, $services->getMainConfig()
 					),
 					$services->getSpecialPageFactory(),
-					$services->getRevisionLookup(),
 					$services->getNamespaceInfo(),
+					$services->getGroupPermissionsLookup(),
+					$services->getUserGroupManager(),
 					$services->getBlockErrorFormatter(),
 					$services->getHookContainer(),
-					// Check for 1.36 for the UserCache as new argument
-					is_callable( [ $services, 'getUserCache' ] ) ? $services->getUserCache() : null
+					$services->getUserCache(),
+					$services->getRedirectLookup()
 				);
 			}
 		);

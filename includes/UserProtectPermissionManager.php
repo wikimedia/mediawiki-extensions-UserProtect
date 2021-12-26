@@ -24,10 +24,10 @@ class UserProtectPermissionManager extends PermissionManager {
 	/** @var array */
 	private static $cache = [];
 
-	/** @var LinkTarget */
+	/** @var LinkTarget|null */
 	private $userProtectPage;
 
-	/** @var array */
+	/** @var array|null */
 	private $removedRights;
 
 	/**
