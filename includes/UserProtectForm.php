@@ -274,7 +274,9 @@ class UserProtectForm {
 			$out->addHTML( "<div class='error'>{$err}</div>\n" );
 		}
 
-		if ( $title->getRestrictionTypes() === [] ) {
+		if ( MediaWikiServices::getInstance()->getRestrictionStore()
+			->listApplicableRestrictionTypes( $title ) === []
+		) {
 			// No restriction types available for the current title
 			// this might happen if an extension alters the available types
 			$out->setPageTitle( $context->msg(

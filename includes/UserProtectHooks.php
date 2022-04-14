@@ -18,11 +18,12 @@ class UserProtectHooks {
 			return;
 		}
 
-		$permissionManager = MediaWikiServices::getInstance()->getPermissionManager();
+		$services = MediaWikiServices::getInstance();
+		$permissionManager = $services->getPermissionManager();
 		$user = $skinTemplate->getUser();
 		$ns = $title->getNamespace();
 		if ( !( $permissionManager->quickUserCan( 'userprotect', $user, $title ) &&
-			$title->getRestrictionTypes() &&
+			$services->getRestrictionStore()->listApplicableRestrictionTypes( $title ) &&
 			$permissionManager->getNamespaceRestrictionLevels( $ns, $user ) !== [ '' ] )
 		) {
 			return;
