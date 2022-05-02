@@ -4,5 +4,8 @@
 			"Mehtab ahmed"
 		]
 	},
-	"userprotect-label-users": "واپرائيندڙَ"
+	"userprotect-label-all-rights": "سڀ حقَ",
+	"userprotect-label-users": "واپرائيندڙَ",
+	"userprotect-add-rights-legend": "حقَ وجهو",
+	"userprotect-remove-rights-legend": "حق ھٽايو"
 }
