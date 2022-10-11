@@ -4,6 +4,7 @@
 			"Vlad5250"
 		]
 	},
+	"action-userprotect": "upravljanje kontralom pristupa po stranici, po korisniku",
 	"userprotect-label-all-rights": "Sva prava",
 	"userprotect-label-users": "Korisnici"
 }
