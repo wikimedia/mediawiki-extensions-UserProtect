@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"action-userprotect": "gerir o controlo de acesso por página e por utilizador",
+	"right-userprotect": "Proteção de utilizadores",
+	"userprotect-desc": "Esta extensão permite o controlo de acessos por página e por utilizador",
+	"userprotect-tab-text": "Proteção de utilizadores",
+	"userprotect-label-all-rights": "Todos os direitos",
+	"userprotect-label-users": "Utilizadores",
+	"userprotect-add-rights-legend": "Adicionar direitos",
+	"userprotect-remove-rights-legend": "Remover direitos"
+}
