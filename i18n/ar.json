@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"action-userprotect": "إدارة التحكم في الوصول لكل صفحة لكل مستخدم",
+	"right-userprotect": "حماية المستخدم",
+	"userprotect-desc": "يوفر هذا الامتداد التحكم في الوصول لكل صفحة لكل مستخدم",
+	"userprotect-tab-text": "حماية المستخدم",
+	"userprotect-label-all-rights": "جميع الحقوق",
+	"userprotect-label-users": "المستخدمون",
+	"userprotect-add-rights-legend": "أضف الحقوق",
+	"userprotect-remove-rights-legend": "إزالة الحقوق"
+}
