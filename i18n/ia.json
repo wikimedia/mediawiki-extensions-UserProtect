@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"action-userprotect": "gerer le controlo de accesso per pagina e per usator",
+	"right-userprotect": "Proteger usatores",
+	"userprotect-desc": "Iste extension forni un accesso de controlo per pagina e per usator",
+	"userprotect-tab-text": "Protection de usatores",
+	"userprotect-label-all-rights": "Tote le derectos",
+	"userprotect-label-users": "Usatores",
+	"userprotect-add-rights-legend": "Adder derectos",
+	"userprotect-remove-rights-legend": "Remover derectos"
+}
