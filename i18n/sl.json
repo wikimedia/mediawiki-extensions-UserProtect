@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"action-userprotect": "upravljanje nadzora dostopa po strani in po uporabniku",
+	"right-userprotect": "Uporabniška zaščita",
+	"userprotect-desc": "Ta razširitev omogoča nadzor dostopa po strani in po uporabniku",
+	"userprotect-tab-text": "Uporabniška zaščita",
+	"userprotect-label-all-rights": "Vse pravice",
+	"userprotect-label-users": "Uporabniki",
+	"userprotect-add-rights-legend": "Dodaj pravice",
+	"userprotect-remove-rights-legend": "Odstrani pravice"
+}
