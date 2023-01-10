@@ -30,7 +30,7 @@
 	"Hooks": {
 		"ArticleDeleteComplete": "UserProtectHooks::onArticleDeleteComplete",
 		"PageSaveComplete": "UserProtectHooks::onPageContentInsertComplete",
-		"SkinTemplateNavigation": "UserProtectHooks::onSkinTemplateNavigation",
+		"SkinTemplateNavigation::Universal": "UserProtectHooks::onSkinTemplateNavigation",
 		"MediaWikiServices": "UserProtectHooks::onMediaWikiServices",
 		"LoadExtensionSchemaUpdates": "UserProtectHooks::onLoadExtensionSchemaUpdates"
 	},
