@@ -37,7 +37,7 @@ class UserProtectPermissionManager extends PermissionManager {
 	 * @param string $rigor
 	 * @return bool
 	 */
-	public function userCan( $action, User $user, LinkTarget $page, $rigor = self::RIGOR_SECURE ) {
+	public function userCan( $action, User $user, LinkTarget $page, $rigor = self::RIGOR_SECURE ): bool {
 		$this->userProtectPage = $page;
 		$return = parent::userCan( $action, $user, $page, $rigor );
 		$this->userProtectPage = null;
@@ -56,7 +56,7 @@ class UserProtectPermissionManager extends PermissionManager {
 	 */
 	public function getPermissionErrors(
 		$action, User $user, LinkTarget $page, $rigor = self::RIGOR_SECURE, $ignoreErrors = []
-	) {
+	): array {
 		$this->userProtectPage = $page;
 		$this->removedRights = [];
 		$return = parent::getPermissionErrors( $action, $user, $page, $rigor, $ignoreErrors );
@@ -78,7 +78,7 @@ class UserProtectPermissionManager extends PermissionManager {
 	 * @param UserIdentity $user
 	 * @return array|string[]
 	 */
-	public function getUserPermissions( UserIdentity $user ) {
+	public function getUserPermissions( UserIdentity $user ): array {
 		$permissions = parent::getUserPermissions( $user );
 
 		if ( $this->userProtectPage && $user->getId() ) {
