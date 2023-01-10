@@ -63,7 +63,12 @@ class UserProtectHooks {
 					$services->getBlockErrorFormatter(),
 					$services->getHookContainer(),
 					$services->getUserCache(),
-					$services->getRedirectLookup()
+					$services->getRedirectLookup(),
+					$services->getRestrictionStore(),
+					$services->getTitleFormatter(),
+					$services->getTempUserConfig(),
+					$services->getUserFactory(),
+					$services->getActionFactory()
 				);
 			}
 		);
