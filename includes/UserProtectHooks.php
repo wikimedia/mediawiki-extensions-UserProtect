@@ -14,7 +14,7 @@ class UserProtectHooks {
 	 */
 	public static function onSkinTemplateNavigation( SkinTemplate $skinTemplate, array &$links ) {
 		$title = $skinTemplate->getTitle();
-		if ( !$title ) {
+		if ( !$title || !$title->canExist() ) {
 			return;
 		}
 
