@@ -1,15 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"Verdy p",
 			"Wladek92"
 		]
 	},
-	"action-userprotect": "gérer le contrôle d'accès par page et par utilisateur",
-	"right-userprotect": "Protection utilisateur",
-	"userprotect-desc": "Cette extension fournit le contrôle d'accès par page et par utilisateur",
-	"userprotect-tab-text": "Protection utilisateur",
+	"action-userprotect": "gérer le contrôle d’accès par page et par utilisateur",
+	"right-userprotect": "Protection des utilisateurs",
+	"userprotect-desc": "Cette extension fournit le contrôle d’accès par page et par utilisateur",
+	"userprotect-tab-text": "Protection des utilisateurs",
 	"userprotect-label-all-rights": "Tous les droits",
 	"userprotect-label-users": "Utilisateurs",
-	"userprotect-add-rights-legend": "Tous les droits",
-	"userprotect-remove-rights-legend": "Supprimer les droits"
+	"userprotect-add-rights-legend": "Ajouter des droits",
+	"userprotect-remove-rights-legend": "Retirer des droits"
 }
