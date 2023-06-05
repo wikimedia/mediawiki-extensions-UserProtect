@@ -1,15 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hebrewtranslater"
+			"Hebrewtranslater",
+			"Amire80"
 		]
 	},
-	"action-userprotect": "נהל הרשאות לפי-דף לפי-משתמש",
+	"action-userprotect": "לנהל הרשאות לפי דף ולפי משתמש",
 	"right-userprotect": "הגנה לפי משתמש",
-	"userprotect-desc": "הרחבה זו מאפשרת לנהל הרשאות דף ברמת משתמש",
+	"userprotect-desc": "ההרחבה הזאת מאפשרת לנהל הרשאות דף ברמת משתמש",
 	"userprotect-tab-text": "הגנה לפי משתמש",
 	"userprotect-label-all-rights": "כל ההרשאות",
 	"userprotect-label-users": "משתמשים",
-	"userprotect-add-rights-legend": "הוסף הרשאות",
-	"userprotect-remove-rights-legend": "הסר הרשאות"
+	"userprotect-add-rights-legend": "הוספת הרשאות",
+	"userprotect-remove-rights-legend": "הסרת הרשאות"
 }
