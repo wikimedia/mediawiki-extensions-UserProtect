@@ -2,10 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
+			"McDutchie",
 			"Nieuwsgierige Gebruiker"
 		]
 	},
+	"action-userprotect": "de toegangscontrole per pagina en per gebruiker te beheren",
 	"right-userprotect": "Gebruiker beveiligen",
+	"userprotect-desc": "Deze uitbreiding biedt toegangscontrole per pagina en per gebruiker",
+	"userprotect-tab-text": "Gebruikerbeveiliging",
 	"userprotect-label-all-rights": "Alle rechten",
 	"userprotect-label-users": "Gebruikers",
 	"userprotect-add-rights-legend": "Rechten toevoegen",
