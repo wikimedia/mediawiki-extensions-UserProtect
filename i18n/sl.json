@@ -6,7 +6,7 @@
 	},
 	"action-userprotect": "upravljanje nadzora dostopa po strani in po uporabniku",
 	"right-userprotect": "Uporabniška zaščita",
-	"userprotect-desc": "Ta razširitev omogoča nadzor dostopa po strani in po uporabniku",
+	"userprotect-desc": "Ta razširitev omogoča nadzor dostopa po straneh in po uporabnikih",
 	"userprotect-tab-text": "Uporabniška zaščita",
 	"userprotect-label-all-rights": "Vse pravice",
 	"userprotect-label-users": "Uporabniki",
