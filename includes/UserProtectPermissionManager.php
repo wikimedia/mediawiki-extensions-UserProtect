@@ -84,7 +84,7 @@ class UserProtectPermissionManager extends PermissionManager {
 		if ( $this->userProtectPage && $user->getId() ) {
 			$title = Title::newFromLinkTarget( $this->userProtectPage );
 			wfDebug( __METHOD__ . ': ' . $title->getArticleID() );
-			list( $removed, $added ) = self::getRights( $title, $user->getId() );
+			[ $removed, $added ] = self::getRights( $title, $user->getId() );
 			if ( $added ) {
 				$permissions = array_merge( $permissions, $added );
 			}
