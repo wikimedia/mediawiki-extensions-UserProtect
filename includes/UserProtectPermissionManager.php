@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Linker\LinkTarget;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\User\UserIdentity;
 
@@ -148,7 +149,7 @@ class UserProtectPermissionManager extends PermissionManager {
 			];
 		}
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 		$res = $dbr->select( $table, $vars, $conds, __METHOD__ );
 
 		$rights = [ [], [] ];

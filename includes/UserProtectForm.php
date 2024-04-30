@@ -128,7 +128,7 @@ class UserProtectForm {
 			];
 		}
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 		$res = $dbr->select( $tables, $vars, $conds, __METHOD__ );
 		foreach ( $res as $row ) {
 			$this->rights[$row->added][$row->type][] = $row->user_name;
@@ -174,7 +174,7 @@ class UserProtectForm {
 			}
 		}
 
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getConnectionProvider()->getPrimaryDatabase();
 
 		if ( $title->exists() ) {
 			$tableName = 'user_protect_rights';
@@ -204,6 +204,7 @@ class UserProtectForm {
 			$this->addRowsForType( $users, $removeValue, $type, self::TYPE_REMOVED, $timestamp, $rows );
 			$this->addRowsForType( $users, $add[$type], $type, self::TYPE_ADDED, $timestamp, $rows );
 		}
+		// @phan-suppress-next-line SecurityCheck-SQLInjection
 		$dbw->insert( $tableName, $rows, __METHOD__ );
 
 		$dbw->endAtomic( __METHOD__ );
@@ -344,7 +345,7 @@ class UserProtectForm {
 			return [];
 		}
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 		$res = $dbr->select(
 			'user',
 			[ 'user_id', 'user_name' ],
