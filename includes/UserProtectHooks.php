@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Config\ServiceOptions;
+use MediaWiki\Language\LazyLocalizationContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\PermissionManager;
 
@@ -60,7 +61,12 @@ class UserProtectHooks {
 					$services->getNamespaceInfo(),
 					$services->getGroupPermissionsLookup(),
 					$services->getUserGroupManager(),
-					$services->getBlockErrorFormatter(),
+					$services->getBlockManager(),
+					$services->getFormatterFactory()->getBlockErrorFormatter(
+						new LazyLocalizationContext( static function () {
+							return RequestContext::getMain();
+						} )
+					),
 					$services->getHookContainer(),
 					$services->getUserCache(),
 					$services->getRedirectLookup(),
@@ -89,7 +95,7 @@ class UserProtectHooks {
 		WikiPage $wikiPage, User $user, string $reason, int $id, Content $content,
 		LogEntry $logEntry, int $archivedRevisionCount
 	) {
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getConnectionProvider()->getPrimaryDatabase();
 		$dbw->delete(
 			'user_protect_rights',
 			[
@@ -109,7 +115,7 @@ class UserProtectHooks {
 		WikiPage $wikiPage, User $user
 	) {
 		$title = $wikiPage->getTitle();
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getConnectionProvider()->getPrimaryDatabase();
 		$dbw->delete(
 			'user_protect_titles',
 			[
