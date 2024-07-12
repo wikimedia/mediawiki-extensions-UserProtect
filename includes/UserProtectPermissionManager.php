@@ -70,6 +70,7 @@ class UserProtectPermissionManager extends PermissionManager {
 			}
 		}
 		$this->removedRights = null;
+		// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 		MWDebug::log( $action . ' ' . var_export( $return, true ) );
 		wfDebug( __METHOD__ . ': ' . $action . ' ' . var_export( $return, true ) );
 		return $return;
