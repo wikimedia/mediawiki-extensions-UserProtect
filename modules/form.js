@@ -6,7 +6,7 @@
 ( function ( mw, $, OO ) {
 	'use strict';
 
-	var config = mw.config.get( 'extUserProtectConfig' ),
+	let config = mw.config.get( 'extUserProtectConfig' ),
 		applicableTypes = config.applicableTypes || [],
 		applicableLegends = config.applicableLegends || {},
 		rights = config.rights || {},
@@ -72,7 +72,7 @@
 
 	form.addItems( [ fieldsetAdd, fieldsetRemove, new OO.ui.FieldLayout( submit ), token ] );
 
-	$( function () {
+	$( () => {
 		// eslint-disable-next-line no-jquery/no-global-selector
 		$( '.userprotect-remove-when-ready' ).remove();
 		// eslint-disable-next-line no-jquery/no-global-selector

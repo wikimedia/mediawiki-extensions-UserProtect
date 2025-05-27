@@ -1,7 +1,7 @@
 {
 	"root": true,
 	"extends": [
-		"wikimedia/client-es5",
+		"wikimedia/client",
 		"wikimedia/jquery",
 		"wikimedia/mediawiki"
 	],
@@ -10,6 +10,7 @@
 		"mediaWiki": false
 	},
 	"rules": {
-		"mediawiki/class-doc": "warn"
+		"mediawiki/class-doc": "warn",
+		"prefer-const": "warn"
 	}
 }
