@@ -2,6 +2,8 @@
 
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Permissions\PermissionStatus;
+use MediaWiki\Title\Title;
 use OOUI\ProgressBarWidget;
 
 class UserProtectForm {
@@ -12,8 +14,8 @@ class UserProtectForm {
 	/** @var int */
 	private const TYPE_ADDED = 1;
 
-	/** @var array Permissions errors for the protect action */
-	private $permErrors = [];
+	/** @var PermissionStatus Permissions errors for the protect action */
+	private readonly PermissionStatus $permStatus;
 
 	/** @var Title */
 	private $title;
@@ -54,7 +56,7 @@ class UserProtectForm {
 		$rigor = $this->context->getRequest()->wasPosted()
 			? PermissionManager::RIGOR_SECURE
 			: PermissionManager::RIGOR_FULL;
-		$this->permErrors = $this->permManager->getPermissionErrors(
+		$this->permStatus = $this->permManager->getPermissionStatus(
 			'userprotect',
 			$action->getUser(),
 			$this->title,
@@ -62,9 +64,9 @@ class UserProtectForm {
 		);
 		$readOnlyMode = $services->getReadOnlyMode();
 		if ( $readOnlyMode->isReadOnly() ) {
-			$this->permErrors[] = [ 'readonlytext', $readOnlyMode->getReason() ];
+			$this->permStatus->error( 'readonlytext', $readOnlyMode->getReason() );
 		}
-		$this->disabled = $this->permErrors !== [];
+		$this->disabled = !$this->permStatus->isGood();
 		$this->disabledAttrib = $this->disabled
 			? [ 'disabled' => 'disabled' ]
 			: [];
@@ -295,7 +297,7 @@ class UserProtectForm {
 				$context->msg( 'protect-title-notallowed', $title->getPrefixedText() )
 			);
 			$out->addWikiTextAsInterface(
-				$out->formatPermissionsErrorMessage( $this->permErrors, 'userprotect' )
+				$out->formatPermissionStatus( $this->permStatus, 'userprotect' )
 			);
 		} else {
 			$out->setPageTitle( $context->msg( 'protect-title', $title->getPrefixedText() ) );
