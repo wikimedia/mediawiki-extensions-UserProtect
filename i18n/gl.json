@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"action-userprotect": "xestionar o control de acceso por páxina e por usuario",
+	"right-userprotect": "Protexer por usuario",
+	"userprotect-desc": "Esta extensión proporciona control de acceso por páxina e por usuario",
+	"userprotect-tab-text": "Protexer por usuario",
+	"userprotect-label-all-rights": "Todos os dereitos",
+	"userprotect-label-users": "Usuarios",
+	"userprotect-add-rights-legend": "Engadir dereitos",
+	"userprotect-remove-rights-legend": "Eliminar dereitos"
+}
