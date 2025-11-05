@@ -283,7 +283,7 @@ class UserProtectForm {
 			$out->setPageTitle( $context->msg(
 				'protect-norestrictiontypes-title',
 				$title->getPrefixedText()
-			) );
+			)->escaped() );
 			$out->addWikiTextAsInterface(
 				$context->msg( 'protect-norestrictiontypes-text' )->plain()
 			);
@@ -294,13 +294,13 @@ class UserProtectForm {
 		# the protection settings at this time
 		if ( $this->disabled ) {
 			$out->setPageTitle(
-				$context->msg( 'protect-title-notallowed', $title->getPrefixedText() )
+				$context->msg( 'protect-title-notallowed', $title->getPrefixedText() )->escaped()
 			);
 			$out->addWikiTextAsInterface(
 				$out->formatPermissionStatus( $this->permStatus, 'userprotect' )
 			);
 		} else {
-			$out->setPageTitle( $context->msg( 'protect-title', $title->getPrefixedText() ) );
+			$out->setPageTitle( $context->msg( 'protect-title', $title->getPrefixedText() )->escaped() );
 			$out->addWikiMsg( 'protect-text', wfEscapeWikiText( $title->getPrefixedText() ) );
 		}
 
