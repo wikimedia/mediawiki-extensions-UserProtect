@@ -70,6 +70,7 @@ class UserProtectHooks {
 					$services->getHookContainer(),
 					version_compare( MW_VERSION, '1.43', '>=' )
 						? $services->getUserIdentityLookup()
+						// @phan-suppress-next-line PhanTypeMismatchArgument
 						: $services->getUserCache(),
 					$services->getRedirectLookup(),
 					$services->getRestrictionStore(),

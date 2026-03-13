@@ -331,7 +331,7 @@ class UserProtectForm {
 			'progress' => false,
 			'classes' => [ 'userprotect-remove-when-ready' ]
 		] );
-		$out->addHTML( $progressBar );
+		$out->addHTML( (string)$progressBar );
 	}
 
 	/**
