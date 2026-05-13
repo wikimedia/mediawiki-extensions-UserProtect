@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"action-userprotect": "د هر مخ د هر کارن د لاسرسي کنترول مهارول",
+	"right-userprotect": "کارن ژغورنه",
+	"userprotect-desc": "دا شاتاړی د هر مخ د هر کارن لپاره د لاسرسي کنترول چمتو کوي",
+	"userprotect-tab-text": "کارن ژغورنه",
+	"userprotect-label-all-rights": "ټولې رښتې",
+	"userprotect-label-users": "کارنان",
+	"userprotect-add-rights-legend": "رښتې ورگډول",
+	"userprotect-remove-rights-legend": "رښتې لرې‌کول"
+}
