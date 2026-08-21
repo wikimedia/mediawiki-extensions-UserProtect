@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"action-userprotect": "spravovať riadenie prístupu podľa stránky a používateľa",
+	"right-userprotect": "Ochrana podľa používateľa",
+	"userprotect-desc": "Toto rozšírenie poskytuje riadenie prístupu podľa stránky a používateľa",
+	"userprotect-tab-text": "Ochrana podľa používateľa",
+	"userprotect-label-all-rights": "Všetky oprávnenia",
+	"userprotect-label-users": "Používatelia",
+	"userprotect-add-rights-legend": "Pridať oprávnenia",
+	"userprotect-remove-rights-legend": "Odobrať oprávnenia"
+}
