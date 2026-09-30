@@ -78,10 +78,11 @@ class UserProtectPermissionManager extends PermissionManager {
 
 	/**
 	 * @param UserIdentity $user
+	 * @param bool $includePrivateInfo
 	 * @return array|string[]
 	 */
-	public function getUserPermissions( UserIdentity $user ): array {
-		$permissions = parent::getUserPermissions( $user );
+	public function getUserPermissions( UserIdentity $user, bool $includePrivateInfo = true ): array {
+		$permissions = parent::getUserPermissions( $user, $includePrivateInfo );
 
 		if ( $this->userProtectPage && $user->getId() ) {
 			$title = Title::newFromLinkTarget( $this->userProtectPage );
